@@ -29,7 +29,7 @@ app.get("/api/", function (req, res) {
   var now = new Date()
   res.json({
     "unix": now.getTime(),
-    "utc" : now.getUTCString()
+    "utc" : now.toUTCString()
   });
 });
 
